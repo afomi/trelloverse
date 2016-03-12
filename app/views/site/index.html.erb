@@ -1,0 +1,82 @@
+<h2>
+  <%= @board.name %>
+</h2>
+
+<table>
+  <tr>
+    <td style="width: 20%;">
+      Lists
+    </td>
+    <td style="width: 30%;">
+      <%= @lists_count %>
+    </td>
+    <td style="width: 50%;">
+      <%= @lists.collect(&:name) %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Cards
+    </td>
+    <td>
+      <%= @cards_count %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Average # of Cards per List
+    </td>
+    <td>
+      <%= @average_number_of_cards_per_list %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Min # of Cards per List
+    </td>
+    <td>
+      <%= @card_min %> -
+      <%= @card_min_column %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Max # of Cards per List
+    </td>
+    <td>
+      <%= @card_max %> -
+      <%= @card_max_column %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      # of each Label
+    </td>
+    <td>
+      <%= @label_hash %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Total Label Hours
+    </td>
+    <td>
+      <%= @total_label_hours %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Total Label Work Weeks
+    </td>
+    <td>
+      <%= @total_label_work_weeks %>
+    </td>
+  </tr>
+</table>
