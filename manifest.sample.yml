@@ -1,0 +1,12 @@
+---
+  env: &env
+    TRELLO_PUBLIC_KEY:
+    TRELLO_SECRET_KEY:
+    TRELLO_TOKEN:
+    TRELLO_BOARD_ID:
+
+  applications:
+  - name: app-name
+    buildpack: "https://github.com/ddollar/heroku-buildpack-multi"
+    env:
+      <<: *env
